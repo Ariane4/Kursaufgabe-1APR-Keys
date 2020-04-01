@@ -4,7 +4,7 @@ import './SuperHeroList.css';
 function SuperHeroList(props) {
     console.log(props)
     const SuperHero = props.Ariane.map(items =>
-        < div className="super-hero" >
+        < div >
             <img src={items.urlImage} alt="" />
             <p>{items.id}</p>
             <h2>{items.name}</h2>
@@ -12,7 +12,7 @@ function SuperHeroList(props) {
         </div >
     )
     return (
-        <div>{SuperHero}</div>
+        <div className="super-hero" >{SuperHero}</div>
     )
 }
 
